@@ -1,152 +1,177 @@
-# Discussion around how we measure technical risk in the Ministry of Justice.
+# Criteria for measuring technical risk in the Ministry of Justice.
 
-Aim
 
-We need a consistent approach to categorizing technical risk on our application estate. This is a test document that outlines the approach the Tech Arch community agreed to try out on the 7th March 2019.
+### Definition of Technical Risk
 
-Definition
+We are using the term _technical risk_ to talk about whether a given technology is in a healthy state.
+ 
+### Origin
 
 This came about from a discussion of technical debt as per Tom Read exco presentation - “becomes outdated and risky over time” “better user interfaces cover a myriad of potential issues”
 
 We think that the term “technical debt” is in danger of being overloaded and so we will use the term “technical risk” for this conversation.
- 
-TODO what does intentional neglect or pre-live services mean for the criteria.
-Measures
-We defined three measures, any of which can be given a red/amber/green status
+  
 
-People: does the application code, environments and deployment pipeline have people within the organisation who are available to write and deploy updates across the stack:
+### Usage of Technical Risk Measures
+
+This will allow us to have a way of articulating the health of a given technology to stakeholders. 
+
+The measures described in this document should allow a conversation with many layers of the organisation.
+
+The expectation is that the terms used here become the standard by which these conversations happen, whether thats with
+delivery teams or the SMT.  
+
+
+### Overview
+
+Technical risk has been divided into 3 categories. 
+
+- People: Do we have people who can iterate the system
+- Technology: Is the system in a manageable and secure state.
+- Atropy: Is the system degrading overtime, due to expiry of support or licences.
+
+This process does *not* make assumptions about the relative importance of systems. It is not aware of business critically or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Prioritization is outside of the scope of this work.
+
+
+### Process
+
+Anyone with knowledge of the systems can use this document to update the current state of the technical risk. 
+
+This should be owned at the team level if possible. By a technical architect or equivalent. 
+
+It should be updated on a quarterly basis - even if that is to say nothing has changed.
+
+The criteria are a series of questions, the answers to which drive a red/amber/green status for the overall category. The google sheets we are currently using simplfy this process.
+
+### Documents
+
+**Central digital** [https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0](https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0)
+
+**Justice Services** [https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230](https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230)
+
+
+### The measures
+
+#####People
+
+**Description** Does the application code, environments and deployment pipeline have people within the organisation who are available to write and deploy updates across the stack?
 	
-Criteria
-Understands the context and business need for the service and has previous experience of working on the service
-Has the skills necessary toand has experience of working on it
-Is willing to work on it
+For the purposes of this evaluation, people can be:
 
-Definition of “people”
-Civil servants (including FTA)
-Contractors
-Managed service (for example Cap Gemini). Expectation that managed service can pick up ad-hoc and scheduled work.
+- Civil servants (including FTA)
+- Contractors
+- Managed service (for example Cap Gemini). Expectation that managed service can pick up ad-hoc and scheduled work.
 
-Definition of “available”
-Working on the application
-Available to work on application from service area/agency
+To be included they however must:
 
-Scoring:
+- Understand the context and business need for the service and has previous experience of working on the service
+- Have the skills necessary to and has experience of working on it
+- Are willing to work on it
+- Be currently working on application or available to pick up work on the same day
+
+
+**Scoring**
+
 Green:
-More than one civil servant
-One civil servant plus more than one contractor
-One civil servant plus managed service contract
+- More than 1 civil servant
+- 1 civil servant plus more than 1 contractor
+- 1 civil servant plus managed service contract
 
-	Amber:
-Only 1 civil servant
-Only contractors
-Only a managed contract
-Only 1 civil servant plus 1 contractor
+Amber:
+- 1 civil servant only
+- 1 or less civil servants and 1 or more contractors only
+- Only a managed contract
 
-	Red:
-Nobody
+Red:
+- 0 civil servants AND 0 contractors AND no managed service
 	
 
+##### Technology
 
-Technology: can the team regularly and reliably deploy updates to the service, and is the tech generally in a good state:
-
-Criteria:
-How easy is it to deploy?
-Team can deploy in working hours (High deployment frequency)
-Application has automated tests (low % change failure)
-Application has build promotion through test environments (low % change failure)
-The team who owns the app own the complete deployment
-Can deploy multiple times a day (Short lead time to deploy)
-2) How risky is it to deploy and operate?
-The alerts for an incident are well understood and sent to a known place
-Logs are aggregated and are searchable
-The application has a backup/recovery strategy
-	3) How easy is it to change?
-Code base can be easily changed (application architecture is well understood, can be built on dev machines)
-	4) How secure is it?
-The security status of the application is well understood 
-What are the known risks?
+**Description** Can the service be regularly and reliably deployed, and is the tech generally in a good state.
 
 
-	Green:
-Yes to sections 1, 2, 3
-Has a risk register that has been updated in the last 6 months
-No high security risks, < 2 mediums.
+**Criteria**
 
-	Amber (any of these trigger amber):
-Deployment only in hours
-Limited alerting or monitoring, undefined recipients of alerts
-Need external actors to do deploy
-Long deployments limiting frequency to <2 a day
-Code base not well understood, so even if know the app a change takes multiple days
-Has a risk register of some form but not updated in the last 6 months
-No high security risks, 2-5 mediums.
+Management
+
+- Team can deploy in working hours
+- Application has automated tests
+- Application has build promotion through test environments
+- Team who owns the app own the complete deployment
+- Can deploy multiple times a day
+- Alerts for an incident are well understood and sent to a known place
+- Logs are aggregated and searchable
+- Application has a backup/recovery strategy
+- Code base can be easily changed
+
+Security
+
+- Team has a good understanding of application's security
+- Number of medium security risks
+- Number of high security risks
 
 
-Red (Any of these trigger red):
-No automated tests
-Deployments take so long they must be done over a weekend / overnight
-No alerting/monitoring/log aggregation (any one of)
-No backup/recovery strategy
-Has no risk register of any form.
-Has any known high risks.
-Or 5+ mediums
-	
-
-Atrophy (does the application, its dependencies or its contracts require attention): 
-
-Criteria
-Licenses expiring
-Versions of code/libraries/etc out of support
-Behind on patching
-Behind on security patching
-Support contract expiring
-Legislation changes are coming which will affect the service (eg GDPR, accessibility)
-We aren’t actively preventing inevitable degradation over time
+**Scoring**
 
 Green
-No issues on any versions/contracts and application is being actively maintained to avoid degradation
 
-Amber (Any of trigger amber):
-Any of the licences/expiring in 6 months
-Technologies going out of support in the next 6 months
-Available patches not applied in last 6 months
-Security patches available but not applied for last 3 months
-Support contracts will expire in the next 9 months.
-Legislation with significant impact changing in the next 6 months
-Application is not being actively worked on so will degrade
-
-Red (any of trigger):
-Security patches older than 6 months not applied
-Available patches not applied in last 12 months
-Technologies already out of support
-Legislation with significant impact changing in the next 3 months (or already past)
-
-Appendix
-Application Status
-Systems can be defined as being in:
-
-(is there a people/team component to these definitions)
-
-Life support
-This app is just being kept alive, with no patching or maintenance being applied. 
-
-Support
-This app is being actively maintained, patched, library versions are kept up to date, legislative changes applied and so on. But it is not under active development for new features.
-
-Active
-App is under active development by a service team, new features are being released.
+- Green unless conditions for amber / red are met
 
 
+Amber
+- Number of medium security risks >= 2 ands less than 5
 
-Intentional Neglect
+
+Red
+
+- more than 2 missing criteria from management section
+- false response to "Team has a good understanding of application's security"
+- Number of medium security risks > 5
+- Number of high security risks > 1
+
+##### Atrophy 
+
+**Description** Does the application, its dependencies or its contracts require attention 
+
+Criteria
+- When do licences expire
+- When will major dependencies go out of support
+- When were general dependency updates last applied
+- When were the oldest unapplied security patches released
+- When does the support contract expire
+- When do the next relevant legislation changes come into effect that are not already implemented (GDPR/Accessibility/specific) 
+- Are we actively preventing degradation over time
+
+Green
+
+- Green unless conditions for amber / red are met
+
+Amber
+
+- Licences expiring in next 6 months
+- Major dependencies out of support in the next 6 months
+- Last general updates more the 6 months ago
+- Oldest unapplied security patches released more than 3 months ago
+- Support contract expiring in the next 9 months
+- Next legislative change due within 6 months
+
+
+Red
+
+- Licences already expired
+- Major dependencies already out of support
+- Last general updates more the 1 year ago
+- Oldest unapplied security patches released more than 6 months ago
+- Support contract already expired
+- Next legislative change due within 3 months
+
+
+##### Appendix
+
+**Intentional Neglect**
 
 We know we can’t handle the risk, so letting it rot. Needs to be coupled with an active plan for replacement/retirement.
 
 
-Useful to regard ATOS thinking. Won’t take on an app older than 5 years, or an app with support ending in less than 3 years.
 
-
-Comments:
-
-Given so many are public facing services, accessibility is important - these will need to be compliant with the new Public Body Accessibility Regulations by September 23rd 2020 latest 
-GDPR?
