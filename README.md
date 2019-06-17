@@ -7,7 +7,7 @@ We are using the term _technical risk_ to talk about whether a given technology 
  
 ### Origin
 
-This came about from a discussion of technical debt as per Tom Read exco presentation - “becomes outdated and risky over time” “better user interfaces cover a myriad of potential issues”
+This came about from a discussion of technical debt as per Tom Read's exco presentation - which used definitions like: “becomes outdated and risky over time” “better user interfaces cover a myriad of potential issues”
 
 We think that the term “technical debt” is in danger of being overloaded and so we will use the term “technical risk” for this conversation.
   
@@ -28,7 +28,7 @@ Technical risk has been divided into 3 categories.
 
 - People: Do we have people who can iterate the system
 - Technology: Is the system in a manageable and secure state.
-- Atropy: Is the system degrading overtime, due to expiry of support or licences.
+- Atrophy: Is the system degrading overtime, due to expiry of support or licences.
 
 This process does *not* make assumptions about the relative importance of systems. It is not aware of business critically or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Prioritization is outside of the scope of this work.
 
@@ -52,7 +52,7 @@ The criteria are a series of questions, the answers to which drive a red/amber/g
 
 ### The measures
 
-#####People
+#### People
 
 **Description** Does the application code, environments and deployment pipeline have people within the organisation who are available to write and deploy updates across the stack?
 	
@@ -80,13 +80,14 @@ Green:
 Amber:
 - 1 civil servant only
 - 1 or less civil servants and 1 or more contractors only
+- 2 or more contractors only
 - Only a managed contract
 
 Red:
 - 0 civil servants AND 0 contractors AND no managed service
 	
 
-##### Technology
+#### Technology
 
 **Description** Can the service be regularly and reliably deployed, and is the tech generally in a good state.
 
@@ -130,7 +131,7 @@ Red
 - Number of medium security risks > 5
 - Number of high security risks > 1
 
-##### Atrophy 
+#### Atrophy 
 
 **Description** Does the application, its dependencies or its contracts require attention 
 
@@ -167,11 +168,10 @@ Red
 - Next legislative change due within 3 months
 
 
-##### Appendix
-
 **Intentional Neglect**
 
-We know we can’t handle the risk, so letting it rot. Needs to be coupled with an active plan for replacement/retirement.
+This is for when we are chosen to not work on a system, for example when we are replacing it and are focusing time/money on the replacement. This **must** be 
+an active choice and there **must** be a plan to retire or replace the system.
 
 
 
