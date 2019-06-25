@@ -28,9 +28,9 @@ Technical risk has been divided into 3 categories:
 
 - People: Do we have people who can iterate the system?
 - Technology: Is the system in a manageable and secure state?
-- Atrophy: Is the system degrading over time, due to expiry of support or licences, legislation changing, lack of support etc?
+- Atrophy: Is the system degrading over time, due to things like expiry of support or licences, legislation changing, lack of ongoing support?
 
-This process does *not* make assumptions about the relative importance of systems. It is not aware of business critically or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Prioritization is outside of the scope of this work.
+This process does **not** make assumptions about the relative importance of systems. It is not aware of business criticality or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Although these technical risk measures can and should be used to inform prioritization decisions, they need to be combined with local context and data on value/scale/criticality to do that effectively. Collecting that data is outside the scope of this work - we're discussing that aspect with the product profession.
 
 
 ### Process
@@ -39,7 +39,7 @@ Anyone with knowledge of the systems can use this document to update the current
 
 This should be owned at the team level if possible, by a technical architect or equivalent.
 
-It should be updated on a quarterly basis - even if that is to say nothing has changed.
+It should be updated on at least a quarterly basis - even if that is to say nothing has changed.
 
 The criteria are a series of questions, the answers to which drive a red/amber/green status for the overall category. The google sheets we are currently using simplfy this process.
 
@@ -64,8 +64,8 @@ For the purposes of this evaluation, people can be:
 
 To be included they however must:
 
-- Understand the context and business need for the service and has previous experience of working on the service
-- Have the skills necessary to and has experience of working on it
+- Have the skills necessary to work on it
+- Understand the context and business need for the service, from previous experience of working on the service
 - Are willing to work on it
 - Be currently working on the application or available to pick up work on the same day
 
@@ -73,19 +73,19 @@ To be included they however must:
 **Scoring**
 
 Green:
-- More than 1 civil servant
-- 1 civil servant plus more than 1 contractor
+- 2 or more civil servants
+- 1 civil servant plus 2 or more contractors
 - 1 civil servant plus managed service contract
 
 Amber:
-- 1 civil servant only
-- 1 or less civil servants and 1 or more contractors only
-- 2 or more contractors only
-- Only a managed contract
+- 1 civil servant and 0 contractors
+- 1 or 0 civil servants and 1 or more contractors
+- 0 civil servants and 2 or more contractors
+- Only a managed service contract
 
 Red:
-- 0 civil servants AND 0 contractors AND no managed service
-	
+- 0 civil servants and 0 contractors and no managed service contract
+
 
 #### Technology
 
@@ -156,7 +156,7 @@ Amber
 - Last general updates more than 6 months ago
 - Oldest unapplied security patches released more than 3 months ago
 - Support contract expiring in the next 9 months
-- Next legislative change due within 6 months
+- Next legislative change coming into effect within 6 months
 
 
 Red
@@ -166,7 +166,7 @@ Red
 - Last general updates more than 1 year ago
 - Oldest unapplied security patches released more than 6 months ago
 - Support contract already expired
-- Next legislative change due within 3 months
+- Next legislative change coming into effect within 3 months
 
 
 **Intentional Neglect**
