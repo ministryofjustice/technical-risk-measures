@@ -45,6 +45,8 @@ The criteria are a series of questions, the answers to which drive a red/amber/g
 
 Answer the questions as they're written, even if you aren't sure how they might apply in the context of the kind of technology involved or don't think it's a risk to not meet them in your context. We want to gather accurate data across a range of services and then use that to understand where our risks are overall and how significant they are to us at various levels, as well as to refine the criteria themselves.
 
+If a system comprises several components where the answers to many of the questions would be significantly different between them, then you can separate them out in the spreadsheet to make that clear. We aren't too concerned with being consistent across MOJ on how we do this, because we already have systems of very different scales to assess anyway. If you do separate components out like this, name them in a way that makes the relationship between them clear.
+
 ### Scope
 
 All of our technology has external dependencies at some level, whether that's on SaaS/PaaS/IaaS providers, hardware manufacturers, open-source code, commercial software or suppliers (of all sizes) who build and/or support our tech under a range of commercial arrangements.
