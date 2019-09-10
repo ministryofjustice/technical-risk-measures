@@ -58,6 +58,10 @@ That could include:
 - all software that MOJ operates, either directly or through a supplier who operates it specifically for us
 - devices used by MOJ staff
 
+Any technology which is intended for real use is in scope as soon as it exists, even if it isn't actually in real use yet, for example a service at early private beta stage.
+
+Short-lived technology which isn't intended to be used for real, such as a prototype or proof of concept which is thrown away, is generally not in scope. However, prototypes which are hosted somewhere are in scope and should be assessed, because they require some maintenance to avoid posing a security risk over time.
+
 ### Documents
 
 **Central Digital** [https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0](https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0)
