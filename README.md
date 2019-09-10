@@ -43,6 +43,8 @@ It should be updated on at least a quarterly basis - even if that is to say noth
 
 The criteria are a series of questions, the answers to which drive a red/amber/green status for the overall category. The google sheets we are currently using simplfy this process.
 
+Answer the questions as they're written, even if you aren't sure how they might apply in the context of the kind of technology involved or don't think it's a risk to not meet them in your context. We want to gather accurate data across a range of services and then use that to understand where our risks are overall and how significant they are to us at various levels, as well as to refine the criteria themselves.
+
 ### Scope
 
 All of our technology has external dependencies at some level, whether that's on SaaS/PaaS/IaaS providers, hardware manufacturers, open-source code, commercial software or suppliers (of all sizes) who build and/or support our tech under a range of commercial arrangements.
