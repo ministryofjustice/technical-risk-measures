@@ -43,6 +43,21 @@ It should be updated on at least a quarterly basis - even if that is to say noth
 
 The criteria are a series of questions, the answers to which drive a red/amber/green status for the overall category. The google sheets we are currently using simplfy this process.
 
+### Scope
+
+All of our technology has external dependencies at some level, whether that's on SaaS/PaaS/IaaS providers, hardware manufacturers, open-source code, commercial software or suppliers (of all sizes) who build and/or support our tech under a range of commercial arrangements.
+
+When you're using these measures on a system, **consider all its technology that exists specifically for MOJ**, regardless of commercial arrangements or who does the work on it.
+
+That could include:
+
+- instances of services such as a content management system or enterprise software which are hosted for MOJ
+- configuration for our use of commercial services, for example SaaS or cloud providers
+- our build, testing and deployment pipelines around our use of commercial services
+- custom software built and managed for us by a supplier
+- all software that MOJ operates, either directly or through a supplier who operates it specifically for us
+- devices used by MOJ staff
+
 ### Documents
 
 **Central Digital** [https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0](https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0)
