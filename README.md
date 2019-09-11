@@ -139,8 +139,7 @@ Red
 Criteria
 - When do licences expire?
 - When will major dependencies go out of support?
-- When were general dependency updates last applied?
-- When were the oldest unapplied security patches released?
+- When was the oldest unapplied version of any dependency released?
 - When does the support contract expire?
 - When do the next relevant legislation changes come into effect that are not already implemented? (GDPR/Accessibility/specific to service)
 - Are we actively preventing degradation over time?
@@ -153,8 +152,7 @@ Amber
 
 - Licences expiring in next 6 months
 - Major dependencies out of support in the next 6 months
-- Last general updates more than 6 months ago
-- Oldest unapplied security patches released more than 3 months ago
+- Oldest unapplied version of a dependency released more than 3 months ago
 - Support contract expiring in the next 9 months
 - Next legislative change coming into effect within 6 months
 
@@ -163,8 +161,7 @@ Red
 
 - Licences already expired
 - Major dependencies already out of support
-- Last general updates more than 1 year ago
-- Oldest unapplied security patches released more than 6 months ago
+- Oldest unapplied version of a dependency released more than 1 year ago
 - Support contract already expired
 - Next legislative change coming into effect within 3 months
 
