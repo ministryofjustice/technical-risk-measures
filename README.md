@@ -69,6 +69,7 @@ To be included they however must:
 - Are willing to work on it
 - Be currently working on the application or available to pick up work on the same day
 
+A managed service contract means that all day-to-day technical work on the service is outsourced. A system which is outsourced but without a contract that covers continuous maintenance and improvement work does not count as a managed service here. However good the support provided by a managed service contract, we should still have some in-house understanding of how the system works at a technical level in order to make informed decisions about it and provide oversight.
 
 **Scoring**
 
