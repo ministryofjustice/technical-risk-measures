@@ -97,15 +97,13 @@ Red:
 
 Management
 
-- Team can deploy in working hours
 - Application has automated tests
 - Application has build promotion through test environments
-- Team who owns the app own the complete deployment
-- Can deploy multiple times a day
+- The overall process for making a change to the service is quick, easy and cheap for us
+- Changes to the service can be deployed quickly and easily during working hours, without downtime for users
 - Alerts for an incident are well understood and sent to a known place
 - Logs are aggregated and searchable
 - Application has a backup/recovery strategy
-- Code base can be easily changed
 
 Security
 
