@@ -97,7 +97,7 @@ Red:
 
 Management
 
-- Application has automated tests
+- Automated tests cover most of the functionality and are run frequently
 - Application has a deployment pipeline which includes promoting a build artefact through at least one production-like test environment before production
 - The overall process for making a change to the service is quick, easy and cheap for us
 - Changes to the service can be deployed quickly and easily during working hours, without downtime for users
