@@ -28,7 +28,7 @@ Technical risk has been divided into 3 categories:
 
 - People: Do we have people who can iterate the system?
 - Technology: Is the system in a manageable and secure state?
-- Atrophy: Is the system degrading over time, due to things like expiry of support or licences, legislation changing, lack of ongoing support?
+- Decay: Is the system degrading over time, due to things like expiry of support or licences, legislation changing, lack of ongoing support?
 
 This process does **not** make assumptions about the relative importance of systems. It is not aware of business criticality or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Although these technical risk measures can and should be used to inform prioritization decisions, they need to be combined with local context and data on value/scale/criticality to do that effectively. Collecting that data is outside the scope of this work - we're discussing that aspect with the product profession.
 
@@ -132,7 +132,7 @@ Red
 - 1 or more high security risks
 
 
-#### Atrophy
+#### Decay
 
 **Description** Does the application, its dependencies or its contracts require attention?
 
