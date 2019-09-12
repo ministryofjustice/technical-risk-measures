@@ -98,7 +98,7 @@ Red:
 Management
 
 - Application has automated tests
-- Application has build promotion through test environments
+- Application has a deployment pipeline which includes promoting a build artefact through at least one production-like test environment before production
 - The overall process for making a change to the service is quick, easy and cheap for us
 - Changes to the service can be deployed quickly and easily during working hours, without downtime for users
 - Alerts for an incident are well understood and sent to a known place
