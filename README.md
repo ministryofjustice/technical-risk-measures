@@ -82,6 +82,7 @@ Amber:
 - 1 civil servant and 0 contractors
 - 1 civil servant plus 1 contractor
 - 0 civil servants and 2 or more contractors
+- 1 or more contractors plus managed service contract
 - Only a managed service contract
 
 Red:
