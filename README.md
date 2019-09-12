@@ -103,7 +103,7 @@ Management
 - Changes to the service can be deployed quickly and easily during working hours, without downtime for users
 - Alerts for an incident are well understood and sent to a known place
 - Logs are aggregated and searchable
-- Application has a backup/recovery strategy
+- Application has a backup/recovery strategy which is tested regularly and provides continuity to users
 
 Security
 
