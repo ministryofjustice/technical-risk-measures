@@ -43,6 +43,31 @@ It should be updated on at least a quarterly basis - even if that is to say noth
 
 The criteria are a series of questions, the answers to which drive a red/amber/green status for the overall category. The google sheets we are currently using simplfy this process.
 
+Answer the questions as they're written, even if you aren't sure how they might apply in the context of the kind of technology involved or don't think it's a risk to not meet them in your context. We want to gather accurate data across a range of services and then use that to understand where our risks are overall and how significant they are to us at various levels, as well as to refine the criteria themselves.
+
+You can record a short summary of the reason for a particular answer as a comment on that cell in the spreadsheet, for example so the next person updating it can see why you made that decision. This isn't the place for recording details of all the specific risks around a service though, so be sparing with these comments to keep visual noise low. Don't add extra text in the cell itself because it will break the RAG formatting and summary calculation.
+
+If a system comprises several components where the answers to many of the questions would be significantly different between them, then you can separate them out in the spreadsheet to make that clear. We aren't too concerned with being consistent across MOJ on how we do this, because we already have systems of very different scales to assess anyway. If you do separate components out like this, name them in a way that makes the relationship between them clear.
+
+### Scope
+
+All of our technology has external dependencies at some level, whether that's on SaaS/PaaS/IaaS providers, hardware manufacturers, open-source code, commercial software or suppliers (of all sizes) who build and/or support our tech under a range of commercial arrangements.
+
+When you're using these measures on a system, **consider all its technology that exists specifically for MOJ**, regardless of commercial arrangements or who does the work on it.
+
+That could include:
+
+- instances of services such as a content management system or enterprise software which are hosted for MOJ
+- configuration for our use of commercial services, for example SaaS or cloud providers
+- our build, testing and deployment pipelines around our use of commercial services
+- custom software built and managed for us by a supplier
+- all software that MOJ operates, either directly or through a supplier who operates it specifically for us
+- devices used by MOJ staff
+
+Any technology which is intended for real use is in scope as soon as it exists, even if it isn't actually in real use yet, for example a service at early private beta stage.
+
+Short-lived technology which isn't intended to be used for real, such as a prototype or proof of concept which is thrown away, is generally not in scope. However, prototypes which are hosted somewhere are in scope and should be assessed, because they require some maintenance to avoid posing a security risk over time.
+
 ### Documents
 
 **Central Digital** [https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0](https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0)
