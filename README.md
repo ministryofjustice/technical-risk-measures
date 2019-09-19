@@ -103,7 +103,7 @@ Management
 - The overall process for making a change to the service is quick, easy and cheap for us
 - Changes to the service can be deployed quickly and easily during working hours, without downtime for users
 - Alerts for an incident are well understood, sent to a known place and can be responded to effectively
-- Detailed logs are easily available and usable for debugging and understanding performance effectively
+- Detailed logs are easily available and usable for debugging, investigating security incidents and understanding performance effectively
 - Application has a backup/recovery strategy which is tested regularly and provides continuity to users
 
 Security
