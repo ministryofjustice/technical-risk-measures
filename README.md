@@ -28,7 +28,7 @@ Technical risk has been divided into 3 categories:
 
 - People: Do we have people who can iterate the system?
 - Technology: Is the system in a manageable and secure state?
-- Atrophy: Is the system degrading over time, due to things like expiry of support or licences, legislation changing, lack of ongoing support?
+- Decay: Is the system degrading over time, due to things like expiry of support or licences, legislation changing, lack of ongoing support?
 
 This process does **not** make assumptions about the relative importance of systems. It is not aware of business criticality or operational concerns such as data privacy / fraud / etc. All systems are treated equally. Although these technical risk measures can and should be used to inform prioritization decisions, they need to be combined with local context and data on value/scale/criticality to do that effectively. Collecting that data is outside the scope of this work - we're discussing that aspect with the product profession.
 
@@ -94,6 +94,7 @@ To be included they however must:
 - Are willing to work on it
 - Be currently working on the application or available to pick up work on the same day
 
+A managed service contract means that all day-to-day technical work on the service is outsourced. A system which is outsourced but without a contract that covers continuous maintenance and improvement work does not count as a managed service here. However good the support provided by a managed service contract, we should still have some in-house understanding of how the system works at a technical level in order to make informed decisions about it and provide oversight.
 
 **Scoring**
 
@@ -106,6 +107,7 @@ Amber:
 - 1 civil servant and 0 contractors
 - 1 civil servant plus 1 contractor
 - 0 civil servants and 2 or more contractors
+- 1 or more contractors plus managed service contract
 - Only a managed service contract
 
 Red:
@@ -121,15 +123,13 @@ Red:
 
 Management
 
-- Team can deploy in working hours
-- Application has automated tests
-- Application has build promotion through test environments
-- Team who owns the app own the complete deployment
-- Can deploy multiple times a day
-- Alerts for an incident are well understood and sent to a known place
-- Logs are aggregated and searchable
-- Application has a backup/recovery strategy
-- Code base can be easily changed
+- Automated tests cover most of the functionality and are run frequently
+- Application has a deployment pipeline which includes promoting a build artefact through at least one production-like test environment before production
+- The overall process for making a change to the service is quick, easy and cheap for us
+- Changes to the service can be deployed quickly and easily during working hours, without downtime for users
+- Alerts for an incident are well understood, sent to a known place and can be responded to effectively
+- Detailed logs are easily available and usable for debugging, investigating security incidents and understanding performance effectively
+- Application has a backup/recovery strategy which is tested regularly and provides continuity to users
 
 Security
 
@@ -157,15 +157,14 @@ Red
 - 1 or more high security risks
 
 
-#### Atrophy
+#### Decay
 
 **Description** Does the application, its dependencies or its contracts require attention?
 
 Criteria
 - When do licences expire?
 - When will major dependencies go out of support?
-- When were general dependency updates last applied?
-- When were the oldest unapplied security patches released?
+- When was the oldest unapplied version of any dependency released?
 - When does the support contract expire?
 - When do the next relevant legislation changes come into effect that are not already implemented? (GDPR/Accessibility/specific to service)
 - Are we actively preventing degradation over time?
@@ -178,8 +177,7 @@ Amber
 
 - Licences expiring in next 6 months
 - Major dependencies out of support in the next 6 months
-- Last general updates more than 6 months ago
-- Oldest unapplied security patches released more than 3 months ago
+- Oldest unapplied version of a dependency released more than 3 months ago
 - Support contract expiring in the next 9 months
 - Next legislative change coming into effect within 6 months
 
@@ -188,8 +186,7 @@ Red
 
 - Licences already expired
 - Major dependencies already out of support
-- Last general updates more than 1 year ago
-- Oldest unapplied security patches released more than 6 months ago
+- Oldest unapplied version of a dependency released more than 1 year ago
 - Support contract already expired
 - Next legislative change coming into effect within 3 months
 
