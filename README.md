@@ -189,9 +189,3 @@ Red
 - Oldest unapplied version of a dependency released more than 1 year ago
 - Support contract already expired
 - Next legislative change coming into effect within 3 months
-
-
-**Intentional Neglect**
-
-This is for when we are choosing to not work on a system, for example when we are replacing it and are focusing time/money on the replacement. This **must** be
-an active choice and there **must** be a plan to retire or replace the system.
