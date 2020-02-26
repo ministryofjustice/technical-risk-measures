@@ -70,10 +70,13 @@ Short-lived technology which isn't intended to be used for real, such as a proto
 
 ### Documents
 
+**Public read-only demo spreadsheet** [https://docs.google.com/spreadsheets/d/13vQC9WL2pk5fgzbJTiXx4j1osCg8TmaWIniP9br1fHE/edit#gid=0](https://docs.google.com/spreadsheets/d/13vQC9WL2pk5fgzbJTiXx4j1osCg8TmaWIniP9br1fHE/edit#gid=0)
+
 **Central Digital** [https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0](https://docs.google.com/spreadsheets/d/1pUwlFFbLJJe1P1EInJ_WWKq4aZlmzsEheSUSfFTRLXs/edit#gid=0)
 
 **Justice Services** [https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230](https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230)
 
+We use a [Python script](https://github.com/ministryofjustice/technical-risk-measures-spreadsheet) to set up and manage these spreadsheets via the Google Sheets API.
 
 ### The measures
 
