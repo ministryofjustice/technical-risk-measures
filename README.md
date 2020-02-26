@@ -76,6 +76,7 @@ Short-lived technology which isn't intended to be used for real, such as a proto
 
 **Justice Services** [https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230](https://docs.google.com/spreadsheets/d/1_QhfxBvxknVqvakePQJ8Efb0zGVUzX9q0cMZUryqg9U/edit?usp=drive_web&ouid=100348229431864504230)
 
+We use a [Python script](https://github.com/ministryofjustice/technical-risk-measures-spreadsheet) to set up and manage these spreadsheets via the Google Sheets API.
 
 ### The measures
 
